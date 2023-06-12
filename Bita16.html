@@ -21,7 +21,7 @@
 						<h1><a href="index.html">Sarely Calderon</a></h1>
 						<nav class="links">
 							<ul>
-								<li><a href="page3.html">HOME</a></li>
+								<li><a href="page4.html">HOME</a></li>
 								<li><a href="#">BITÁCORA</a></li>
 								<li><a href="index.html">SOBRE MI</a></li>
 								<li><a href="#">CONTACTO</a></li>
@@ -134,7 +134,7 @@
 											<p>Condiciones Arduino</p>
 										</a>
 									</li>
-									<li>
+                                    <li>
 										<a href="Bita15.html">
 											<h3>Bitácora 15</h3>
 											<p>Componentes pasivos y activos</p>
@@ -213,18 +213,36 @@
 							<article class="post">
 								<header>
 									<div class="title">
-										<h2><a href="#">Bitácora 13</a></h2>
-										<p>Proyecto con Arduino</p>
+										<h2><a href="#">Bitácora 16</a></h2>
+										<p>Sensores</p>
 									</div>
 									<div class="meta">
-										<time class="published" datetime="2023-11-01">May 04, 2023</time>
+										<time class="published" datetime="2023-11-01">May 12, 2023</time>
 										<a href="#" class="author"><span class="name">Lab 2</span><img src="images/LOGOSARE.png" alt="" /></a>
 									</div>
 								</header>
-								<span class="image featured"><img src="images/BITA13.png" alt="" /></span>
-								<p>Hoy vimos más de cerca el arduino y realizamos un nuevo proyecto que consistía en prender distintos focos pero con diferentes tiempos.</p>
-                                <p>El primero debía durar 10 segundos y cuando éste se pagaba se prendía el 2 por 2 segundos cuando se apagaba se prendía el 3 por 10 segundos. Todo esto fue programado por Arduino a través de sentencias.</p>
-                                <p>Además usamos un aparato que servía para medir las resistencias y saber la correcta a usar en el proyecto dependiendo de la misma.</p>
+								<span class="image featured"><img src="images/BITA16.png" alt="" /></span>
+								<p>Hoy iniciamos la clase con una revisión de la codificación de nuestro proyecto en relación a una ODS que enviamos como tarea y recibimos un feedback que nos ayudará a mejorar nuestra codificación para ponerla a prueba.</p>
+                                <p>También vimos las fuentes AC o DC</p>
+                                <ul>
+                                    <li>AC: La corriente alterna es una corriente eléctrica que cambia de dirección periódicamente, es decir, que fluye en una dirección durante una parte del ciclo y en la dirección opuesta durante la otra parte del ciclo.</li>
+                                    <li>DC: es una corriente eléctrica que fluye en una dirección constante, sin cambiar de dirección periódicamente. Se utiliza en aplicaciones de baja potencia, como los sistemas de alimentación de aparatos electrónicos portátiles, baterías y sistemas de control de motores.</li>
+                                </ul>
+                                <p>Sentencias para el uso del monitor serial:</p>
+                                <ul>
+                                    <li>Serial.begin(9600); se usa para configurar los baudios o velocidad de comunicación entre Arduino y PC.</li>
+                                    <li>Serial.print(""); imprime o envía un dato desde arduino al monitor serial.
+                                    </li> 
+                                    <li>Serial.available(): Pregunta si hay un dato recibido en Arduino desde monitor serial.</li>
+                                    <li>Serial.read(): Lee el dato recibido desde monitor serial al Arduino.</li> 
+                                </ul>
+                                <p>También vimos algunos sensores necesarios para realizar algunos proyectos:</p>
+                                <ul>
+                                    <li>El sensor de ultrasonido: consiste en emitir un sónido ultrasónico por uno de sus transductores, y esperar que el sonido rebote de algún objeto presente, el eco es captador por el segundo transductor. La distancia es proporcional al tiempo que demora en llegar al eco.</li>
+                                    <li>Sensor LCD: Es en realidad un módulo LCD basico y fácil de usar. Incluye crital LCD, placa de control LCD COB, retroiluminación, cebra para conectar el cristal LCD y la placa de control y un bisel para mantener todo junto. La de 16x2 puede mostrar 16 carcateres por y hay dos líneas. Cada caracter tiene pixeles de matriz de puntos de 5x7 y el cursor debajo.</li> 
+                                    <li>Sensor humedad (aire): El DHT11 presume de ser un sensor con una alta fiabilidad y estabilidad debido a su señaldigital calibrada. Lo podemos comprar de dos maneras, individual donde solo tenemos el sensor DHT11, o insertado en una PCB.</li>
+                                    <li>Sensor de humedad (suelo): El FC-28 es un modulo con un sensor simple ya que mide la humedad del suelo por la variación de su conductividad eléctrica. La precisión no es lo suficiente buena para realizar una medición absoluta de la humedad del suelo, pero es necesario para controlar un sistema de riego.</li> 
+                                </ul>
                                 <p> Eso fue todo por la sesión de hoy. ¡Hasta la próxima!</p>
                                 <footer>
 									<ul class="stats">
